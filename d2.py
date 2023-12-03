@@ -68,5 +68,9 @@ def problem2(file):
     return ans
 
 if __name__ == "__main__":
-    print("PART 1:", problem1(f"input/{DAY}.in"))
-    print("PART 2:", problem2(f"input/{DAY}.in"))
+    if "debug" in sys.argv:
+        print("PART 1:", problem1("input.txt"))
+        print("PART 2:", problem2("input.txt"))
+    else:
+        print("PART 1:", problem1(f"input/{DAY}.in"))
+        print("PART 2:", problem2(f"input/{DAY}.in"))
