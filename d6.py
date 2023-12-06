@@ -31,8 +31,6 @@ def problem1(file):
     with open(file) as f:
         for l in f.readlines():
             lines.append(l)
-    def _f(x):
-        return -x**2 + t*x - d
     times=ints(lines[0])
     dists=ints(lines[1])
     for i in range(len(times)):
@@ -43,7 +41,7 @@ def problem1(file):
         w=r2-r1-1
         if ans==0:
             ans=w
-        else:            
+        else:
             ans*=w
 
     return ans
@@ -55,8 +53,6 @@ def problem2(file):
     with open(file) as f:
         for l in f.readlines():
             lines.append("".join(x for x in l if x != " "))
-    def _f(x):
-        return -x**2 + t*x - d
     times=ints(lines[0])
     dists=ints(lines[1])
     for i in range(len(times)):
@@ -67,7 +63,7 @@ def problem2(file):
         w=r2-r1-1
         if ans==0:
             ans=w
-        else:            
+        else:
             ans*=w
 
     return ans
