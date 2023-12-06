@@ -19,10 +19,10 @@ def uints(string, indexes=False):
 
 def ints(string, indexes=False):
     if indexes:
-        nums = re.finditer(r'-\d+', string)
+        nums = re.finditer(r'-?\d+', string)
         return [(x.start(), int(string[x.start():x.end()])) for x in nums]
     else:
-        nums = re.findall(r'-\d+', string)
+        nums = re.findall(r'-?\d+', string)
         return [*map(int, nums)]
 
 def problem1(file):
