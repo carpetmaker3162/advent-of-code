@@ -29,9 +29,6 @@ def problem1(file):
     ans = 0
     lines = []
 
-    #with open(file) as f:
-    #    for l in f.readlines():
-    #        lines.append(l.strip())
     with open(file) as f:
         f=f.read()
     for x,y in re.findall('mul\((\d+),(\d+)\)', f):
@@ -46,9 +43,6 @@ def problem2(file):
     ans = 0
     lines = []
 
-    #with open(file) as f:
-    #    for l in f.readlines():
-    #        lines.append(l.strip())
     with open(file) as f:
         f=f.read()
     enabled=True
